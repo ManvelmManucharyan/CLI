@@ -26,7 +26,7 @@ const VandorSchema = new Schema({
     email: { type: String, required: true },
     password: { type: String, required: true },
     salt: { type: String, required: true },
-    serviceAvailable: { type: Boolean },
+    serviceAvailable: { type: Boolean, default: false },
     coverImages: { type: [String] },
     rating: { type: Number },
     // foods: { type: mongoose.SchemaTypes.ObjectId, ref: 'food' },
